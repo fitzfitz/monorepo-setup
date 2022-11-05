@@ -1,0 +1,32 @@
+{
+  "extends": "@fitzzz/config/typescript/nextjs.json",
+  "include": [
+    "next-env.d.ts",
+    "app/**/*",
+    "styles/globals.css",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    ".turbo"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noEmit": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "incremental": true,
+    "module": "esnext",
+    "resolveJsonModule": true
+  }
+}

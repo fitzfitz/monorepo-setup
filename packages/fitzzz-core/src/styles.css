@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: Poppins;
+    @apply text-sm leading-tight;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center rounded-lg py-2 px-5 text-center tracking-wide transition-all duration-200 ease-in;
+  }
+}
