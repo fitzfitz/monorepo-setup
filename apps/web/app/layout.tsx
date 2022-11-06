@@ -11,7 +11,7 @@ interface Props {
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
-      <head></head>
+      <head />
       <body>{children}</body>
     </html>
   );
