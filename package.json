@@ -1,6 +1,6 @@
 {
   "name": "fitzzz",
-  "private": false,
+  "private": true,
   "workspaces": [
     "apps/*",
     "packages/*"
@@ -8,9 +8,11 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
+    "test": "turbo run test",
     "lint": "turbo run lint",
     "clean": "turbo run clean && rm -rf node_modules rm yarn.lock",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky install",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "turbo run build --filter=docs^... && changeset publish"
@@ -19,9 +21,22 @@
     "@changesets/cli": "^2.22.0",
     "@fitzzz/config": "*",
     "eslint": "^7.32.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.11",
     "turbo": "latest"
   },
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "lint-staged": {
+    "apps/**/*.{js,ts,jsx,tsx}": [
+      "eslint --fix"
+    ],
+    "packages/fitzzz-core/**/*.{js,ts,jsx,tsx}": [
+      "eslint --fix"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  }
 }
