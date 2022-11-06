@@ -1,0 +1,26 @@
+{
+  "name": "@fitzzz/docs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3002",
+    "start": "next start ",
+    "build": "next build",
+    "lint": "TIMING=1 next lint",
+    "test": "echo 'Docs Test'",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf .next"
+  },
+  "dependencies": {
+    "@fitzzz/core": "*",
+    "next": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@fitzzz/config": "*",
+    "@types/node": "^17.0.12",
+    "@types/react": "^18.0.22",
+    "@types/react-dom": "^18.0.7",
+    "typescript": "^4.5.4"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "exclude": ["node_modules"],
+  "extends": "@fitzzz/config/typescript/nextjs.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "dist",
+    "incremental": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": ["app", "next-env.d.ts", ".next/types/**/*.ts"]
+}
