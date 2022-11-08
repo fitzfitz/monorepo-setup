@@ -178,6 +178,7 @@ export interface ButtonProps extends VariantProps<typeof buttonStyles> {
   title?: string;
   className?: string;
   children?: React.ReactNode;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 export const Button = ({
@@ -190,10 +191,12 @@ export const Button = ({
   title,
   className,
   children,
+  onClick,
   ...props
-}: ButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>) => {
+}: ButtonProps): JSX.Element => {
   return (
     <button
+      onClick={onClick}
       title={title}
       className={buttonStyles({ variant, outlined, rounded, class: className })}
       {...props}

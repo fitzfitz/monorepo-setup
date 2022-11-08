@@ -174,7 +174,9 @@ const spinnerStyles = cva("spinner", {
   },
 });
 
-export interface SpinnerProps extends VariantProps<typeof spinnerStyles> {}
+export interface SpinnerProps extends VariantProps<typeof spinnerStyles> {
+  className?: string;
+}
 
 export const Spinner = ({
   type = "spin",
@@ -182,7 +184,7 @@ export const Spinner = ({
   variant,
   soft,
   className,
-}: SpinnerProps & React.HTMLAttributes<HTMLDivElement>) => {
+}: SpinnerProps) => {
   return type === "spin" ? (
     <div
       className={spinnerStyles({
