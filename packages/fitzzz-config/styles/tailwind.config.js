@@ -21,6 +21,7 @@ module.exports = {
         secondary: {
           DEFAULT: "#f000b9",
           focus: "#bd0090",
+          light: "#ff57d8",
         },
         error: {
           DEFAULT: "#d7001b",
@@ -33,6 +34,7 @@ module.exports = {
         accent: {
           DEFAULT: "#5f5af6",
           focus: "#4d47f5",
+          light: "#818cf8",
         },
 
         // Base Colors
@@ -174,6 +176,22 @@ module.exports = {
         // Base Color From Preset
         brandblue: colors.blue[500],
         brandred: colors.red[500],
+      },
+      keyframes: {
+        "progress-increase": {
+          "0%": { left: "-5%", width: "5%" },
+          "100%": { left: "125%", width: "100%" },
+        },
+        "spinner-grow": {
+          "0%, to": { transform: "scale(0)" },
+          "50%": { transform: "scale(1.1)" },
+        },
+      },
+      animation: {
+        "spinner-grow": "spinner-grow 1.5s ease-in-out infinite",
+        "spin-slow": "spin 3s linear infinite",
+        "is-indeterminate":
+          "progress-increase 2s cubic-bezier(.4,0,.2,1) infinite",
       },
     },
   },

@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3002",
-    "start": "next start ",
+    "dev": "next dev -p 6111",
     "build": "next build",
-    "lint": "TIMING=1 next lint",
+    "start": "next start",
+    "lint": "next lint",
     "test": "echo 'Docs Test'",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf .next"
   },
