@@ -15,7 +15,11 @@
     "style:prettier-check": "prettier --check '**/*.{ts,tsx,md}'",
     "style:prettier-write": "prettier --write '**/*.{ts,tsx,md}'",
     "prepare": "husky install",
-    "publish-packages": "turbo run build lint test && changeset version && changeset publish"
+    "turbo-publish": "turbo run build lint test && changeset version && changeset publish",
+    
+    "changeset": "changeset",
+    "prerelease": "npm run build && npm run test",
+    "release": "changeset publish"
 
   },
   "devDependencies": {

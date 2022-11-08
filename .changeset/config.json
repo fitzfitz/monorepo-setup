@@ -1,6 +1,9 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@2.2.0/schema.json",
-  "changelog": "@changesets/cli/changelog",
+  "changelog": [
+    "@changesets/changelog-github",
+    { "repo": "fitzfitz/monorepo-setup" }
+  ],
   "commit": false,
   "fixed": [],
   "linked": [],
