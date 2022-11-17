@@ -93,7 +93,7 @@ let preserveCamelCase = (input: any) => {
   return input;
 };
 
-const camelize = (input: any, options?: OptionsType, out?: any) => {
+export const camelize = (input: any, options?: OptionsType, out?: any) => {
   if (!input) {
     throw new Error("Invalid input provided.");
   }
@@ -125,5 +125,3 @@ const camelize = (input: any, options?: OptionsType, out?: any) => {
   }
   return output;
 };
-
-export default camelize;
