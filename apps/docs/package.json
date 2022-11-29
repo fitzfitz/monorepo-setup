@@ -8,19 +8,19 @@
     "start": "next start",
     "lint": "next lint",
     "test": "echo 'Docs Test'",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf .next"
+    "clean": "rm -rf node_modules .turbo .next pnpm-lock.yaml package-lock.json yarn.lock"
   },
   "dependencies": {
     "@fitzzz/core": "*",
-    "next": "latest",
+    "next": "13.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@fitzzz/config": "*",
-    "@types/node": "^17.0.12",
+    "@types/node": "^18.11.9",
     "@types/react": "^18.0.22",
-    "@types/react-dom": "^18.0.7",
-    "typescript": "^4.5.4"
+    "@types/react-dom": "^18.0.9",
+    "typescript": "^4.9.3"
   }
 }

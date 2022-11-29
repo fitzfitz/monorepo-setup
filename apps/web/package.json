@@ -8,22 +8,22 @@
     "start": "next start",
     "lint": "next lint",
     "test": "echo 'Web Test'",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf .next"
+    "clean": "rm -rf node_modules .turbo .next pnpm-lock.yaml package-lock.json yarn.lock"
   },
   "dependencies": {
     "@fitzzz/core": "*",
-    "next": "latest",
+    "next": "13.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@fitzzz/config": "*",
-    "@types/node": "^17.0.12",
+    "@types/node": "^18.11.9",
     "@types/react": "^18.0.22",
-    "@types/react-dom": "^18.0.7",
+    "@types/react-dom": "^18.0.9",
     "autoprefixer": "^10.4.0",
-    "postcss": "^8.4.4",
-    "tailwindcss": "^3.0.0",
-    "typescript": "^4.5.3"
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.3"
   }
 }

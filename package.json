@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "reset:all": "turbo run clean && rm -rf node_modules rm yarn.lock",
+    "reset:all": "turbo run clean && rm -rf node_modules pnpm-lock.yaml yarn.lock package-lock.json",
     "dev": "turbo run dev --parallel",
     "build": "turbo run build",
     "start": "turbo run start",
@@ -16,20 +16,18 @@
     "style:prettier-write": "prettier --write '**/*.{ts,tsx,md}'",
     "prepare": "husky install",
     "turbo-publish": "turbo run build lint test && changeset version && changeset publish",
-    
     "changeset": "changeset",
     "prerelease": "npm run build && npm run test",
     "release": "changeset publish"
-
   },
   "devDependencies": {
     "@changesets/cli": "^2.22.0",
     "@fitzzz/config": "*",
-    "eslint": "^7.32.0",
+    "eslint": "^8.28.0",
     "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1",
-    "prettier-plugin-tailwindcss": "^0.1.11",
+    "lint-staged": "^13.0.4",
+    "prettier": "^2.8.0",
+    "prettier-plugin-tailwindcss": "^0.2.0",
     "turbo": "latest"
   },
   "version": "1.0.0",
