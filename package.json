@@ -21,14 +21,14 @@
     "release": "changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.22.0",
-    "@fitzzz/config": "*",
-    "eslint": "^8.28.0",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.4",
-    "prettier": "^2.8.0",
-    "prettier-plugin-tailwindcss": "^0.2.0",
-    "turbo": "latest"
+    "@changesets/cli": "^2.26.0",
+    "@fitzzz/config": "^0.1.0",
+    "eslint": "^8.35.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4",
+    "prettier-plugin-tailwindcss": "^0.2.4",
+    "turbo": "^1.8.3"
   },
   "version": "1.0.0",
   "lint-staged": {
