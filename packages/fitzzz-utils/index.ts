@@ -1,5 +1,6 @@
 export * from "./src/camelize";
 export * from "./src/cleanObjects";
+export * from "./src/cloneDeep";
 export * from "./src/deviceUtils";
 export * from "./src/ftx";
 export * from "./src/isEmpty";
