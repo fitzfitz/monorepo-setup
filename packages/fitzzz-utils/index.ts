@@ -4,7 +4,7 @@ export * from "./src/cloneDeep";
 export * from "./src/deviceUtils";
 export * from "./src/ftx";
 export * from "./src/isEmpty";
-export * from "./src/objToQs";
+export * from "./src/objManipulate";
 export * from "./src/triggerDownload";
 export * from "./src/useRegexValidate";
 export * from "./src/uuid";
